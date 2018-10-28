@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="left-down" width="75" height="75" tilewidth="24" tileheight="24" infinite="0" nextlayerid="29" nextobjectid="101">
- <tileset firstgid="1" source="../../Downloads/Outside_A1.tsx"/>
- <tileset firstgid="769" source="../../Downloads/Outside_A2.tsx"/>
- <tileset firstgid="1537" source="../../Downloads/Outside_B.tsx"/>
- <tileset firstgid="2561" source="../../Downloads/Outside_A5.tsx"/>
- <tileset firstgid="3073" source="../../Downloads/SF_Outside_C.tsx"/>
- <tileset firstgid="4097" source="../../Downloads/Dungeon_C.tsx"/>
- <tileset firstgid="5121" source="../../Downloads/Dungeon_B.tsx"/>
- <tileset firstgid="6145" source="../../Downloads/Outside_C.tsx"/>
+ <tileset firstgid="1" source="tilesheets/Outside_A1.tsx"/>
+ <tileset firstgid="769" source="tilesheets/Outside_A2.tsx"/>
+ <tileset firstgid="1537" source="tilesheets/Outside_B.tsx"/>
+ <tileset firstgid="2561" source="tilesheets/Outside_A5.tsx"/>
+ <tileset firstgid="3073" source="tilesheets/SF_Outside_C.tsx"/>
+ <tileset firstgid="4097" source="tilesheets/Dungeon_C.tsx"/>
+ <tileset firstgid="5121" source="tilesheets/Dungeon_B.tsx"/>
+ <tileset firstgid="6145" source="tilesheets/Outside_C.tsx"/>
  <layer id="17" name="piso" width="75" height="75">
   <data encoding="csv">
 2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,2440,2437,2438,2439,
