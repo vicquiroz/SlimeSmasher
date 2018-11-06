@@ -1,0 +1,75 @@
+
+skeleton.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Cabeza
+  rotate: false
+  xy: 2, 554
+  size: 429, 460
+  orig: 1080, 1080
+  offset: 325, 372
+  index: -1
+accesorio
+  rotate: false
+  xy: 433, 781
+  size: 334, 233
+  orig: 1080, 1080
+  offset: 410, 408
+  index: -1
+accesorio2
+  rotate: false
+  xy: 433, 493
+  size: 373, 124
+  orig: 1080, 1080
+  offset: 320, 510
+  index: -1
+brazo 2
+  rotate: true
+  xy: 2, 2
+  size: 101, 181
+  orig: 1080, 1080
+  offset: 483, 415
+  index: -1
+brazo1
+  rotate: false
+  xy: 291, 371
+  size: 101, 181
+  orig: 1080, 1080
+  offset: 422, 416
+  index: -1
+hombro 2
+  rotate: false
+  xy: 769, 839
+  size: 168, 175
+  orig: 1080, 1080
+  offset: 418, 547
+  index: -1
+hombro1
+  rotate: false
+  xy: 785, 662
+  size: 168, 175
+  orig: 1080, 1080
+  offset: 418, 547
+  index: -1
+pierna 1
+  rotate: true
+  xy: 433, 619
+  size: 160, 350
+  orig: 1080, 1080
+  offset: 458, 323
+  index: -1
+pierna 2
+  rotate: true
+  xy: 2, 105
+  size: 160, 350
+  orig: 1080, 1080
+  offset: 462, 309
+  index: -1
+torso
+  rotate: false
+  xy: 2, 267
+  size: 287, 285
+  orig: 1080, 1080
+  offset: 382, 408
+  index: -1
