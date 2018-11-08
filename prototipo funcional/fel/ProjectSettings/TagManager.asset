@@ -47,6 +47,9 @@ TagManager:
   - name: player
     uniqueID: 2213401807
     locked: 0
+  - name: weapons
+    uniqueID: 2632614985
+    locked: 0
   - name: structures
     uniqueID: 1755569417
     locked: 0
