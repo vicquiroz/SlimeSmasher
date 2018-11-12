@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class puntaje : MonoBehaviour {
 
-	float puntos=0;
+	float puntos=100;
 
 	// Use this for initialization
 	void Start () 
@@ -15,6 +15,6 @@ public class puntaje : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		
+		Debug.Log("aboiedhalehcloub");
 	}
 }
