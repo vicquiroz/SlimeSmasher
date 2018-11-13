@@ -7,10 +7,7 @@ public class Restar : MonoBehaviour {
 	public int Slime1 = 20;
 	
 
-	void OnDestroy() {
-		Puntuacion.puntos = Puntuacion.puntos-Slime1;
-
-	}
+	
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +15,16 @@ public class Restar : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
+		
 		
 	}
+
+	void OnTriggerEnter(Collider other)
+    {
+        
+        Debug.Log("Object Entered the trigger");
+        
+    }
 }
