@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Puntuacion : MonoBehaviour {
 
     GameObject player;
-	public static int puntos=1000;
+	public static int puntos=100;
 	public string PuntajeString = "Puntaje: ";
 
     public Text TextPuntaje;

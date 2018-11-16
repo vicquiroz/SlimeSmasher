@@ -7,6 +7,10 @@ public class VidaSlime : MonoBehaviour
 	public static int hp1 = 2;
 	GameObject enemigo;
 
+	public static VidaSlime Vida;
+	void Awake() {
+        Vida = this; }
+
 	// Use this for initialization
 	void Start () 
 	{
