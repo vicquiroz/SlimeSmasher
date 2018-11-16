@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class VidaSlime : MonoBehaviour 
 {
-	public float hp;
+	public static int hp1 = 2;
+	GameObject enemigo;
 
 	// Use this for initialization
 	void Start () 
 	{
-		
+		enemigo = GameObject.FindGameObjectWithTag("slime");
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		
-	}
-
-	public void dañado(float daño)
-	{
-		this.hp -= daño;
-		if(this.hp < 0)
+		if(hp1 <= 0)
 		{
-			this.hp = 0;
-			Destroy (this.gameObject);
+			hp1 = 0;
+			Destroy(enemigo,.0f);
+
 		}
 	}
+
+	
 }

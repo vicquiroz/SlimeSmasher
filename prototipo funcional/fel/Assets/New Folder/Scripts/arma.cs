@@ -6,7 +6,7 @@ public class arma : MonoBehaviour {
 	public GameObject inicial1;
 	public LayerMask queGolpear;
     public float rotacion=0;
-    public float daño;
+    public static int daño=1;
     public double cooldown;
     public float tiempo;
 	// Use this for initialization
@@ -29,24 +29,7 @@ public class arma : MonoBehaviour {
         } 
 	}
 
-	void atacar()
-	{
-
-		RaycastHit2D hit = Physics2D.Raycast(this.transform.position, this.transform.right, 10, queGolpear);
-
-		GameObject tmp = Instantiate(this.inicial1) as GameObject;
-
-
-		if(hit.collider.gameObject.CompareTag("slime"))
-		{
-			hit.collider.gameObject.SendMessage("dañado", this.daño);
-		}
-	}
-
-
-
-
-
+	
 	void rotar()
 	{
 		if(Input.GetKey ("right") && rotacion==0)

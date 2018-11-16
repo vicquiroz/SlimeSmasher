@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EjemColision : MonoBehaviour {
+public class ColisionPlayer : MonoBehaviour {
 
+
+    public int Slime1 = 20;
 	// Use this for initialization
 	void Start () {
 		
@@ -24,6 +26,6 @@ public class EjemColision : MonoBehaviour {
 
     void restarPuntos()
     {
-        Debug.Log("En esta funcion deberian hacer la resta de puntos, eliminar el slime, etc, etc");
+        Puntuacion.puntos = Puntuacion.puntos-Slime1;
     }
 }

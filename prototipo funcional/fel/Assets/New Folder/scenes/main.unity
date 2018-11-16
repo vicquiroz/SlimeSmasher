@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 443004346}
   - component: {fileID: 443004347}
   - component: {fileID: 443004348}
+  - component: {fileID: 443004349}
   m_Layer: 0
   m_Name: inicial1
   m_TagString: arma
@@ -273,7 +274,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   rotacion: 0
-  "da\xF1o": 1
   cooldown: 0
   tiempo: 0
 --- !u!61 &443004348
@@ -288,7 +288,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.200001, y: -0.12328005}
+  m_Offset: {x: -3.2000027, y: -0.13717341}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 1, y: 0.5}
@@ -299,8 +299,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.114331, y: 3.7436042}
+  m_Size: {x: 3.8566773, y: 3.3822803}
   m_EdgeRadius: 0
+--- !u!114 &443004349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 443004344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9276a42d529aa9479961d12d561c949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &505256114
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,8 +344,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -498, y: -247.43}
-  m_SizeDelta: {x: 260.4, y: 72.1}
+  m_AnchoredPosition: {x: -395.9, y: -247.43}
+  m_SizeDelta: {x: 464.6, y: 72.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505256116
 MonoBehaviour:
@@ -930,22 +941,22 @@ Prefab:
     - target: {fileID: 23600433528113782, guid: 46de5665ee4931e47accfd20b37ae93a,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: -1851931485
+      value: 1755569417
       objectReference: {fileID: 0}
     - target: {fileID: 23600433528113782, guid: 46de5665ee4931e47accfd20b37ae93a,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 23213192064661454, guid: 46de5665ee4931e47accfd20b37ae93a,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: -1851931485
+      value: 1755569417
       objectReference: {fileID: 0}
     - target: {fileID: 23213192064661454, guid: 46de5665ee4931e47accfd20b37ae93a,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4894510704388802, guid: 46de5665ee4931e47accfd20b37ae93a, type: 2}
       propertyPath: m_RootOrder
@@ -961,6 +972,76 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4629884789262040, guid: 46de5665ee4931e47accfd20b37ae93a, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23889322359493758, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23889322359493758, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23311253240622794, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23311253240622794, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23243990049696480, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23243990049696480, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23260611743524624, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23260611743524624, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23517347628526414, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23517347628526414, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23386422515087178, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23386422515087178, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23058458473938052, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -1851931485
+      objectReference: {fileID: 0}
+    - target: {fileID: 23058458473938052, guid: 46de5665ee4931e47accfd20b37ae93a,
+        type: 2}
+      propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1094,7 +1175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a65344ff7206e40a50263c93efb543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 2
 --- !u!50 &1191755344
 Rigidbody2D:
   serializedVersion: 4
@@ -1268,7 +1348,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.008041978, y: 0.0026788712}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1279,7 +1359,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.75}
+  m_Size: {x: 0.808974, y: 0.8839817}
   m_EdgeRadius: 0
 --- !u!50 &1340387202
 Rigidbody2D:
@@ -1312,6 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c58e002a62caea742bedfd5a21505a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Slime1: 20
 --- !u!1 &2015520719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2015520720}
-  - component: {fileID: 2015520721}
+  - component: {fileID: 2015520722}
   m_Layer: 0
   m_Name: enemigo
   m_TagString: slime
@@ -1342,7 +1423,7 @@ Transform:
   m_Father: {fileID: 208911570}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2015520721
+--- !u!114 &2015520722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1350,7 +1431,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2015520719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ce3fa0a7312424095ae5a9c6fbc709, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ce9689add26d554baf7383f4e74b72f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slime1: 20

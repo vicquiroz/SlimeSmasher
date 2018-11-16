@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Puntuacion : MonoBehaviour {
 
-	public static int puntos=100;
+    GameObject player;
+	public static int puntos=1000;
 	public string PuntajeString = "Puntaje: ";
 
     public Text TextPuntaje;
@@ -20,7 +21,7 @@ public class Puntuacion : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		
+		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
@@ -30,6 +31,10 @@ public class Puntuacion : MonoBehaviour {
 
 			TextPuntaje.text = PuntajeString + puntos.ToString();
 
+		}
+		if (puntos == 0)
+		{	
+		    Destroy(player,.0f);
 		}
 	}
 }
