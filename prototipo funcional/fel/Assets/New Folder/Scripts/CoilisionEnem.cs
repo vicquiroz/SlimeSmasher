@@ -48,5 +48,6 @@ public class CoilisionEnem : MonoBehaviour {
     void unir()
     {
     	Destroy(slime,.0f);
+        On
     }
 }
