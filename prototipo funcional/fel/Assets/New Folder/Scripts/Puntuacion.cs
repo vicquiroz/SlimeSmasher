@@ -13,6 +13,8 @@ public class Puntuacion : MonoBehaviour {
 
     public static Puntuacion Score;
 
+
+
     void Awake() {
         Score = this; 
 
@@ -33,8 +35,9 @@ public class Puntuacion : MonoBehaviour {
 
 		}
 		if (puntos == 0)
-		{	
-		    Destroy(player,.0f);
+		{
+            Destroy(player,.0f);
+            //player.morir();
 		}
 	}
 }
