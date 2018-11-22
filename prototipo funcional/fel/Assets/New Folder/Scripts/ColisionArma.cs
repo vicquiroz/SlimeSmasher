@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColisionArma : MonoBehaviour {
 
+   
 	// Use this for initialization
 	void Start () {
 		
@@ -14,16 +15,14 @@ public class ColisionArma : MonoBehaviour {
 		
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D otros)
     {
-        if (collision.gameObject.tag == "slime" && Input.GetKey("z"))
+        if (otros.gameObject.tag == "slime" && Input.GetKey("z"))
         {
-            restarVida();
+            
+            Destroy(otros.gameObject);
+            Puntuacion.puntos = Puntuacion.puntos + VidaSlime.Slime1;
+            
         }
-    }
-
-    void restarVida()
-    {
-        VidaSlime.hp1 = VidaSlime.hp1-arma.daño;
     }
 }

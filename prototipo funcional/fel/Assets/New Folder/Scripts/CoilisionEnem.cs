@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoilisionEnem : MonoBehaviour {
 
 	public int Slime1 = 20;
-    GameObject slime;
+    public GameObject slime;
 	// Use this for initialization
 	void Start ()
 	{
@@ -23,26 +23,18 @@ public class CoilisionEnem : MonoBehaviour {
         {
             restarPuntos();
         }
-
-        if (collision.gameObject.tag == "arma" && Input.GetKey("z"))
-        {
-            restarVida();
-        }
-
+        
         if (collision.gameObject.tag == "slime" )
         { 
             unir();
         }
     }
 
+    
+
     void restarPuntos()
     {
         Puntuacion.puntos = Puntuacion.puntos-Slime1;
-    }
-
-    void restarVida()
-    {
-        VidaSlime.hp1 = VidaSlime.hp1-arma.daño;
     }
 
     void unir()
