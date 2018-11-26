@@ -5,10 +5,11 @@ using UnityEngine;
 public class CoilisionEnem : MonoBehaviour {
 
 	public int Slime1 = 20;
+    public GameObject slime;
 	// Use this for initialization
 	void Start ()
 	{
-		
+		slime = GameObject.FindGameObjectWithTag("slime");
 	}
 	
 	// Update is called once per frame
@@ -22,20 +23,22 @@ public class CoilisionEnem : MonoBehaviour {
         {
             restarPuntos();
         }
-
-        if (collision.gameObject.tag == "arma" && Input.GetKey("z"))
-        {
-            restarVida();
+        
+        if (collision.gameObject.tag == "slime" )
+        { 
+            unir();
         }
     }
+
+    
 
     void restarPuntos()
     {
         Puntuacion.puntos = Puntuacion.puntos-Slime1;
     }
 
-    void restarVida()
+    void unir()
     {
-        VidaSlime.hp1 = VidaSlime.hp1-arma.daño;
+    	Destroy(slime,.0f);
     }
 }

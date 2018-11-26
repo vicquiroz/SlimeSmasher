@@ -5,28 +5,26 @@ using UnityEngine;
 public class VidaSlime : MonoBehaviour 
 {
 	public static int hp1 = 2;
-	GameObject enemigo;
+	
+    public static int Slime1 = 20;
 
-	public static VidaSlime Vida;
+    public static VidaSlime Vida;
 	void Awake() {
         Vida = this; }
 
 	// Use this for initialization
 	void Start () 
 	{
-		enemigo = GameObject.FindGameObjectWithTag("slime");
+		
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if(hp1 <= 0)
-		{
-			hp1 = 0;
-			Destroy(enemigo,.0f);
-
-		}
+		
 	}
+
+    
 
 	
 }
