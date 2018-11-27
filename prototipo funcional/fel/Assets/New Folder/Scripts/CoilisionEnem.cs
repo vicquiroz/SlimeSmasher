@@ -35,6 +35,7 @@ public class CoilisionEnem : MonoBehaviour {
     void restarPuntos()
     {
         Puntuacion.puntos = Puntuacion.puntos-Slime1;
+        Puntuacion.combo = 0;
     }
 
     void unir()

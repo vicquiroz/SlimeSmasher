@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visionRadius: 100
-  speed: 2
 --- !u!114 &114499689248626520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slime1: 20
+  slime: {fileID: 0}
 --- !u!212 &212024909207339648
 SpriteRenderer:
   m_ObjectHideFlags: 1

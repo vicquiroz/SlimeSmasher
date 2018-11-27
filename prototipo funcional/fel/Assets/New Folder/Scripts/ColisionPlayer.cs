@@ -20,12 +20,18 @@ public class ColisionPlayer : MonoBehaviour {
     {
         if (collision.gameObject.tag == "slime")
         {
+            reset();
             restarPuntos();
         }
     }
 
     void restarPuntos()
     {
+        
         Puntuacion.puntos = Puntuacion.puntos-Slime1;
+    }
+    void reset()
+    {
+      Puntuacion.combo = 0;  
     }
 }
