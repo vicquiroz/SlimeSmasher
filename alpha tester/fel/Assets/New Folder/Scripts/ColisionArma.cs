@@ -18,7 +18,7 @@ public class ColisionArma : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D otros)
     {
-        if (otros.gameObject.tag == "slime" && Input.GetKey("z"))
+        if (otros.gameObject.tag == "slime" && Input.GetKey("z")||otros.gameObject.tag == "gato" && Input.GetKey("z")||otros.gameObject.tag == "slimelvl1a" && Input.GetKey("z"))
         {
         	
             Destroy(otros.gameObject);

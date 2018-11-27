@@ -7,7 +7,7 @@ public class Circle : MonoBehaviour {
 	//Variable vision y velocidad
 
 	public float visionRadius;
-	public float speed;
+	public static float speed = 2f;
 
 // variable para guardar al jugador
 
