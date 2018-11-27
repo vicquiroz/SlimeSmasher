@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour {
 		if (Puntuacion.puntos < 500){
 			spawn = 2.5f;
 		}
-		if(Puntuacion.puntos >= 500){
+		if(Puntuacion.puntos <= 500){
 			spawn = 2f;
 		}
 		if(Puntuacion.puntos >= 1000){
