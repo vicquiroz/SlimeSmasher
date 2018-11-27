@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoilisionEnem : MonoBehaviour {
+public class CoilisionVerde : MonoBehaviour {
 
 	public int Slime1 = 20;
-    public GameObject slime;
+    
 	// Use this for initialization
 	void Start ()
 	{
-		slime = GameObject.FindGameObjectWithTag("slime");
+		
 	}
 	
 	// Update is called once per frame
@@ -23,14 +23,16 @@ public class CoilisionEnem : MonoBehaviour {
         {
             restarPuntos();
         }
-        
-        if (collision.gameObject.tag == "slime" )
-        { 
+
+        if (collision.gameObject.tag == "slimelvl1a")
+        {
             unir();
         }
     }
 
-    
+   
+
+
 
     void restarPuntos()
     {
@@ -40,6 +42,6 @@ public class CoilisionEnem : MonoBehaviour {
 
     void unir()
     {
-    	Destroy(slime,.0f);
+        Destroy(collision.gameObject);
     }
 }
