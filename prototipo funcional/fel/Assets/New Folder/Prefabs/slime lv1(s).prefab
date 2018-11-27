@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114187545170763990}
   - component: {fileID: 61522039752787680}
   - component: {fileID: 50423769979572410}
-  - component: {fileID: 114551069966022482}
   m_Layer: 0
   m_Name: slime lv1(s)
   m_TagString: slimelvl1a
@@ -113,19 +112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visionRadius: 100
---- !u!114 &114551069966022482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1740962213493448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ce9689add26d554baf7383f4e74b72f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Slime1: 20
-  slime: {fileID: 0}
 --- !u!212 &212776364018404052
 SpriteRenderer:
   m_ObjectHideFlags: 1
