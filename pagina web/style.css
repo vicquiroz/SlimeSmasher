@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background color: gray;
+  background-image: url("imgs/slime.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  width: 40%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #247218;
+  text-align: center;
+  border: 5px solid #19131c;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 40%;
+  margin: 0px auto ;
+  padding: 20px;
+  border: 5px solid #19131c;
+  background: #a2f096;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+}
+.input-group label {
+  display: block;
+  text-align: center;
+  margin: 3px;
+}

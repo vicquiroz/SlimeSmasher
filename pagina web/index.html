@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <meta charset="utf-8">
+  
+  <title id="titulo">SlimeSmashe | inicio</title>
+  <link rel="stylesheet" href="pace-theme-corner-indicator.tmpl.css">
+  <script type="text/javascript" src="jquery331.js"></script>
+  <script type="text/javascript" src="pace.min.js"></script>
+  <script type="text/javascript">
+    
+  
+    $(document).ready(function(){
+       $("#img").click(movercapa);
+        $("#enlaceajax").on("click",function(){
+          $("#contenido").load("lista.php");
+                  });  
+      });
+
+     function mover(){
+
+      $("#micapa").animate({
+      movercapa
+      });
+
+    }
+     function movercapa(){
+
+      $("#micapa").fadeOut(300,desplazar);
+    }
+
+    function desplazar(){
+      $("#micapa").css({left: 200});
+      $("#micapa").fadeIn(300);
+    }
+
+    
+
+
+  </script>
+</head>
+<body>
+
+  <div class="header">
+    <h2>¡¡Bienvenido!!</h2>
+  </div>
+  <form >
+    </div>
+      <div class="input-group">
+      <p>Bienvenido a este nueva experiencia en donde tendras que sobrevivir a oleadas de slimes.</p>
+      <p>Para ello deberas derrotar la mayor cantidad de slimes que puedas para asi mejorar tus armas</p>
+      <p>y aguantar el mayor tiempo posible </p> 
+    </div>
+     
+    <p>
+      ¿listo para iniciar sesion? <a href="registro.html" id="registrar" target="_BLANK">registrate</a>
+    </p>
+    <br>
+    <div id="micapa" class="input-group" style="left: 0; top: 0; position: relative; width: 200px;">
+    
+    <img id="img" src="rey.png" width="200" height="200">
+
+  </div>
+  <a href="#" id="enlaceajax">Clickear aqui para ver jugadores registrados</a>
+  <div id="contenido" class="input-group"></div>
+
+
+
+
+</body>
+</html>
