@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D myRigidbody;
 	
 	private bool PlayerMoving;
+	private bool attack;
 	private Vector3 lastMove;
 
 	// Use this for initialization
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 
 		PlayerMoving = false;
+		attack = false;
 
 		if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
 		{
@@ -47,9 +49,15 @@ public class PlayerController : MonoBehaviour {
 			myRigidbody.velocity = new Vector2(0f,myRigidbody.velocity.y);
 
 		}
+		if(Input.GetAxisRaw("Fire2") > 0.5f)
+		{
+			attack = true;
+		}
+
 		anim.SetFloat ("MoveX", Input.GetAxisRaw("Horizontal"));
 		anim.SetFloat ("MoveY", Input.GetAxisRaw("Vertical"));
 		anim.SetBool("PlayerMoving", PlayerMoving);
+		anim.SetBool("attack", attack);
 		anim.SetFloat("LastMoveX",lastMove.x);
 		anim.SetFloat("LastMoveY",lastMove.y);
 
