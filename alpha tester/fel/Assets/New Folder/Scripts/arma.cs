@@ -21,13 +21,7 @@ public class arma : MonoBehaviour {
 	{
         rotar();
         this.tiempo += Time.deltaTime;
-
-        if(Input.GetKey("z") && (this.tiempo > this.cooldown))
-        {
-        	transform.Rotate(new Vector2(180f, 0f));
-        	this.tiempo = 0;
-
-        } 
+        
 	}
 
 	
