@@ -24,10 +24,7 @@ public class CoilisionEnem : MonoBehaviour {
             restarPuntos();
         }
         
-        if (collision.gameObject.tag == "slime" )
-        { 
-            unir();
-        }
+        
     }
 
     
@@ -38,8 +35,5 @@ public class CoilisionEnem : MonoBehaviour {
         Puntuacion.combo = 0;
     }
 
-    void unir()
-    {
-    	Destroy(slime,.0f);
-    }
+    
 }

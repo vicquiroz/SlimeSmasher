@@ -537,7 +537,10 @@ MonoBehaviour:
   ComboString: +
   lvlup: Level Up
   lvlsa: ' '
+  tiempostr: 
+  c: 0
   TextPuntaje: {fileID: 505256116}
+  tiempoll: {fileID: 0}
   Nivel: {fileID: 524417145}
   Combo: {fileID: 1537602479}
   lvl: {fileID: 0}
@@ -826,7 +829,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8d5e6cb8c2592f344bb6a3d9a3319a66, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 294691ce1fa86604c938570c2a2befb2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.753
   m_Pitch: 1
