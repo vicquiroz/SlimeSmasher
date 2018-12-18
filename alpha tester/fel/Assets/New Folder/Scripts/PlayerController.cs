@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 	
 	private bool PlayerMoving;
 	private bool attack;
+	public static bool vivo = true;
 	private Vector3 lastMove;
 
 	// Use this for initialization
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
 		{
-			//transform.Translate (new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+			//ztransform.Translate (new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
 			myRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed,myRigidbody.velocity.y);
 			PlayerMoving = true;
 			lastMove = new Vector3(Input.GetAxisRaw("Horizontal"), 0f,0f);	
@@ -53,7 +54,6 @@ public class PlayerController : MonoBehaviour {
 		{
 			attack = true;
 		}
-
 		anim.SetFloat ("MoveX", Input.GetAxisRaw("Horizontal"));
 		anim.SetFloat ("MoveY", Input.GetAxisRaw("Vertical"));
 		anim.SetBool("PlayerMoving", PlayerMoving);

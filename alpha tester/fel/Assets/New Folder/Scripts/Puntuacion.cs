@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Puntuacion : MonoBehaviour {
 
     GameObject player;
 	public static int puntos=100;
 	float pasado;
+	float tiempo;
 	public string PuntajeString = "Puntaje: ";
 	public string NivelString = "Nivel: ";
 	public string ComboString = "+";
 	public string lvlup = "Level Up";
 	public string lvlsa = " ";
-
+	public string  tiempostr = "";
+	public int c;
     public Text TextPuntaje;
+    public Text tiempoll;
     public Text Nivel;
     public Text Combo;
     public Text lvl;
@@ -37,9 +41,18 @@ public class Puntuacion : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if(Time.time > tiempo && puntos <= 0){
+
+			tiempo=tiempo+1;
+			c++;
+		}
 		if(Time.time > pasado && puntos > 0){
 			puntos = puntos - level;
 			pasado = Time.time + 1f;
+		}
+		if (tiempoll != null){
+
+			tiempoll.text = tiempostr + tiempo.ToString();
 		}
 		if (Combo != null) {
 
@@ -59,9 +72,9 @@ public class Puntuacion : MonoBehaviour {
 
 		if (puntos <= 0)
 		{	
-			existencia = false;
-		    Destroy(player,.0f);
-		    puntos = 0;
+			puntos=0;
+					    Destroy(player,.0f);
+		    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
 		}
 	}
-}
