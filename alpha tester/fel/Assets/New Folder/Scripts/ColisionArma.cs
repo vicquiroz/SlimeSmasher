@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ColisionArma : MonoBehaviour {
 
-   public static int asesinatos = 0;
-
+    public static int asesinatos = 0;
+    
+    public GameObject muerte;
 	// Use this for initialization
 	void Start () {
 		
@@ -22,6 +23,7 @@ public class ColisionArma : MonoBehaviour {
         {
         	
             Destroy(otros.gameObject);
+            
             Puntuacion.combo = Puntuacion.combo + 1;
             EnemySpawner.cantidad =  EnemySpawner.cantidad - 1;
             Puntuacion.puntos = Puntuacion.puntos + VidaSlime.Slime1 + Puntuacion.combo;
